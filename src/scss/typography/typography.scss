@@ -39,6 +39,10 @@ html {
   scroll-behavior: smooth;
   margin: 0 !important;
   padding: 0 !important;
+  a {
+    font-family: $heading;
+    color: $black;
+  }
 }
 p {
   font-size: 1em;
