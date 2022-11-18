@@ -1,0 +1,45 @@
+@import url("https://fonts.cdnfonts.com/css/helvetica-neue-9");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+//color
+$main: #4484e4;
+$secondary: #007aff;
+$button: #4762ff;
+$third: #dbdbdb;
+$black: #1c1c1c;
+$white: #fffbff;
+//font
+$heading: "Helvetica Neue", sans-serif;
+$body: "Roboto", sans-serif;
+
+@for $index from 1 through 6 {
+  h#{$index} {
+    margin: 0;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2.5em;
+}
+h3 {
+  font-size: 2em;
+}
+h4 {
+  font-size: 1.5em;
+}
+
+body,
+html {
+  line-height: 1.6;
+  scroll-behavior: smooth;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+p {
+  font-size: 1em;
+}

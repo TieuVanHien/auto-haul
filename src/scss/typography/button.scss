@@ -1,0 +1,9 @@
+@use "./typography.scss" as *;
+
+.container {
+  .button {
+    background-color: $button;
+    color: $white;
+    font-family: $heading;
+  }
+}
