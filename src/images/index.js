@@ -1,0 +1,10 @@
+export const navImage = require("./nav-image.svg");
+export const aboutUsImg = require("./about-us.svg");
+export const autoHaulServ = require("./auto-haul-serv.svg");
+export const bookingIcon = require("./booking-icon.svg");
+export const formImg = require("./form.svg");
+export const serviceImg1 = require("./service-1.svg");
+export const serviceImg2 = require("./service-2.svg");
+export const serviceImg3 = require("./service-3.svg");
+export const trackingImg = require("./tracking-icon.svg");
+export const truck = require("./truck-icon.svg");
