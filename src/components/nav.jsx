@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "./../assets/logo-svg.svg";
 import { Link } from "react-scroll";
+import { Button } from "@mui/material";
 
 export const Nav = () => {
   return (
@@ -38,7 +39,7 @@ export const Nav = () => {
             //   setOpen(false);
             // }}
           >
-            About Us
+            About
           </Link>
           <Link
             href="#service"
@@ -55,21 +56,24 @@ export const Nav = () => {
           >
             Service
           </Link>
-          <Link
-            href="#Contact"
-            className="link"
-            to="Contact"
-            spy={true}
-            smooth={true}
-            offset={0}
-            duration={700}
-            // onClick={() => {
-            //   setClose(false);
-            //   setOpen(false);
-            // }}
-          >
-            Contact
-          </Link>
+        </div>
+        <div className="contact-btn">
+          <Button className="button" variant="contained">
+            <Link
+              href="#Contact"
+              to="Contact"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={700}
+              // onClick={() => {
+              //   setClose(false);
+              //   setOpen(false);
+              // }}
+            >
+              Contact
+            </Link>
+          </Button>
         </div>
       </div>
     </section>

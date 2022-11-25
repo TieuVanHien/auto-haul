@@ -1,6 +1,7 @@
 @use "./typography.scss" as *;
 
-.container {
+html,
+body .container {
   .button {
     background-color: $button;
     color: $white;
