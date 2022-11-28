@@ -18,7 +18,7 @@ export const Nav = () => {
             spy={true}
             smooth={true}
             offset={0}
-            duration={700}
+            duration={300}
             // onClick={() => {
             //   setClose(false);
             //   setOpen(false);
@@ -33,7 +33,7 @@ export const Nav = () => {
             spy={true}
             smooth={true}
             offset={0}
-            duration={700}
+            duration={300}
             // onClick={() => {
             //   setClose(false);
             //   setOpen(false);
@@ -48,7 +48,7 @@ export const Nav = () => {
             spy={true}
             smooth={true}
             offset={0}
-            duration={700}
+            duration={300}
             // onClick={() => {
             //   setClose(false);
             //   setOpen(false);
@@ -61,11 +61,11 @@ export const Nav = () => {
           <Button className="button" variant="contained">
             <Link
               href="#Contact"
-              to="Contact"
+              to="contact"
               spy={true}
               smooth={true}
               offset={0}
-              duration={700}
+              duration={300}
               // onClick={() => {
               //   setClose(false);
               //   setOpen(false);
