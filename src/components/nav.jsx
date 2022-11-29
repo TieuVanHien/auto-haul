@@ -56,6 +56,21 @@ export const Nav = () => {
           >
             Service
           </Link>
+          <Link
+            href="#tracking"
+            className="link"
+            to="tracking"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={300}
+            // onClick={() => {
+            //   setClose(false);
+            //   setOpen(false);
+            // }}
+          >
+            Tracking
+          </Link>
         </div>
         <div className="contact-btn">
           <Button className="button" variant="contained">

@@ -1,6 +1,6 @@
 import { Nav } from "./components";
 import { BrowserRouter as Router } from "react-router-dom";
-import { Home, About, Service } from "./section";
+import { Home, About, Service, Tracking } from "./section";
 // import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
         <Home />
         <About />
         <Service />
+        <Tracking />
       </Router>
     </div>
   );
