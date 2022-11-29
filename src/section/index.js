@@ -3,3 +3,4 @@ export { About } from "./about";
 export { Service } from "./service";
 export { Tracking } from "./tracking";
 export { FormSubmit } from "./form";
+export { Footer } from "./footer";

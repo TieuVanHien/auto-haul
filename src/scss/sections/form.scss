@@ -1,6 +1,8 @@
 @use "../typography" as *;
 
 .form {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.79);
+  border-top: 2px solid rgba(0, 0, 0, 0.79);
   .container {
     width: 100%;
     .formContact {
@@ -10,6 +12,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+
       h3 {
         color: $black;
         height: 10%;
