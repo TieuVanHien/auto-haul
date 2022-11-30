@@ -1,15 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "./../assets/logo-svg.svg";
 import { Link } from "react-scroll";
 import { Button } from "@mui/material";
+import { Sling as Hamburger } from "hamburger-react";
 
 export const Nav = () => {
+  const [open, setOpen] = useState(false);
+  const [close, setClose] = useState(false);
   return (
     <section className="nav">
       <div className="nav-container">
         <div className="logo">
           <img src={Logo} alt="logo" />
         </div>
+        <Hamburger
+          size={25}
+          color="white"
+          rounded
+          toggled={close}
+          toggle={setClose}
+          aria-expanded={close}
+          onToggle={(toggled) => {
+            if (toggled) {
+              setOpen(true);
+            } else {
+              setOpen(false);
+            }
+          }}
+        />
         <div className="links">
           <Link
             href="#home"
