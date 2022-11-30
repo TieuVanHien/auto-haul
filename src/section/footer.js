@@ -4,6 +4,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import PermPhoneMsgIcon from "@mui/icons-material/PermPhoneMsg";
 import BusinessIcon from "@mui/icons-material/Business";
 import QueryBuilderIcon from "@mui/icons-material/QueryBuilder";
+import { Link } from "@mui/material";
 
 export const Footer = () => {
   return (
@@ -24,13 +25,22 @@ export const Footer = () => {
             </div>
             <div className="detail addresses">
               <BusinessIcon className="icon" />
-              <h5>Address:</h5>
+              <div className="address-detail">
+                <h5>Address:</h5>
+                <h5>731 41 Ave NE, Calgary, AB T2E 6R5</h5>
+              </div>
             </div>
             <div className="detail contact">
-              <h5>Contact</h5>
               <div className="email">
                 <EmailIcon className="icon" />
-                <h5>order@autohauler.ca</h5>
+                <Link
+                  className="email-link"
+                  onClick={() =>
+                    (window.location = "mailto:autohauler88@gmail.com")
+                  }
+                >
+                  order@autohauler.ca
+                </Link>
               </div>
 
               <div className="phone">

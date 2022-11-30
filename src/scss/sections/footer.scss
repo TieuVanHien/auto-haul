@@ -7,7 +7,7 @@
     flex-direction: column;
     h5 {
       color: $black;
-      margin-left: 0.2em;
+      margin-left: 0.3em;
     }
     .top-side {
       width: 100%;
@@ -37,9 +37,20 @@
           flex-direction: column;
           .email {
             display: flex;
+            .email-link {
+              margin-left: 0.3em;
+              cursor: pointer;
+              text-decoration: none;
+            }
           }
           .phone {
             display: flex;
+          }
+          .address {
+            .address-detail {
+              display: flex;
+              flex-direction: column;
+            }
           }
         }
       }
