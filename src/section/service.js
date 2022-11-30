@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Line from "../images/heading-service.svg";
 import bubble from "../images/bubbleBackground.svg";
 import service1 from "../images/service-1.svg";
@@ -7,6 +7,8 @@ import service3 from "../images/service-3.svg";
 import { Button } from "@mui/material";
 
 export const Service = () => {
+  const [open, setOpen] = useState(false);
+  const handleClose = () => setOpen(false);
   return (
     <sections className="service">
       <div className="container">
@@ -25,9 +27,6 @@ export const Service = () => {
                   Alberta Auto Transport is experienced in safely transporting
                   your classic ride across Canada & the US
                 </p>
-                <Button className="button" variant="contained">
-                  Contact
-                </Button>
               </div>
             </div>
             <div className="top board">
@@ -38,9 +37,6 @@ export const Service = () => {
                   We transport all New & Used Vehicles for All Dealerships. We
                   also provide vehicle transportation for Car Rental Companies.
                 </p>
-                <Button className="button" variant="contained">
-                  Contact
-                </Button>
               </div>
             </div>
           </div>
@@ -54,9 +50,6 @@ export const Service = () => {
                   equipment to transport Heavy Trucks, Modified Heavy Trucks and
                   Highway Trucks...
                 </p>
-                <Button className="button" variant="contained">
-                  Contact
-                </Button>
               </div>
             </div>
           </div>

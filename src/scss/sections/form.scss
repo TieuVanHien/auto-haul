@@ -5,6 +5,7 @@
   border-top: 2px solid rgba(0, 0, 0, 0.79);
   .container {
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
     .formContact {
       width: 45%;
       height: 100%;
@@ -12,9 +13,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-
       h3 {
-        color: $black;
         height: 10%;
         display: flex;
         justify-content: center;
@@ -29,6 +28,9 @@
         align-items: center;
         .input {
           width: 60%;
+          .MuiInput-underline {
+            border-color: $white;
+          }
         }
       }
     }

@@ -39,6 +39,36 @@ h5 {
 
 body,
 html {
+  .css-rs7sgu {
+    padding: 1em;
+    border-radius: 0.5em;
+  }
+  .css-79ws1d-MuiModal-root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .trackingModal {
+      h2 {
+        color: $black;
+        font-weight: bold;
+      }
+      display: flex;
+      height: 65%;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .trackingForm {
+        .input {
+          margin-bottom: 1em;
+        }
+        .message {
+          padding: 1em;
+        }
+      }
+    }
+  }
   line-height: 1.6;
   scroll-behavior: smooth;
   margin: 0 !important;

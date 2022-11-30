@@ -20,7 +20,7 @@ export const Footer = () => {
               <div>
                 {" "}
                 <h5>Opening Hours</h5>
-                <h5>Weekdays: 8:00-5:00</h5>
+                <h5>Weekdays: 8:00 am - 5:00 pm</h5>
               </div>
             </div>
             <div className="detail addresses">

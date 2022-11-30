@@ -33,57 +33,72 @@ export const FormSubmit = () => {
           <form ref={form} onSubmit={sendEmail} className="formFill">
             <TextField
               className="input"
-              variant="outlined"
+              variant="standard"
               label="Name"
               placeholder="John Wick"
               type="text"
               name="name"
-              required="required"
+              required="true"
+              sx={{
+                "& .MuiInputLabel-root": { color: "green" },
+                borderBottom: "2px solid white",
+                borderRadius: 1,
+              }}
               InputLabelProps={{
-                style: { color: "black", fontWeight: "bold " },
+                style: { color: "white", fontWeight: "bold " },
               }}
               inputProps={{
                 style: {
                   fontFamily: "nunito",
-                  color: "black",
+                  color: "white",
                   fontWeight: "500",
                 },
               }}
             />
             <TextField
               className="input"
-              variant="outlined"
+              variant="standard"
               label="Email"
               placeholder="jane.doe@gmail.com"
               type="email"
               name="email"
-              required="required"
+              required="true"
+              sx={{
+                "& .MuiInputLabel-root": { color: "green" },
+                borderBottom: "2px solid white",
+                borderRadius: 1,
+              }}
               InputLabelProps={{
-                style: { color: "black", fontWeight: "bold " },
+                style: { color: "white", fontWeight: "bold " },
               }}
               inputProps={{
                 style: {
                   fontFamily: "nunito",
-                  color: "black",
+                  color: "white",
                   fontWeight: "500",
                 },
               }}
             />
             <TextField
               className="input"
-              variant="outlined"
+              variant="standard"
               label="Phone"
               placeholder="(888) 888-8888"
               type="tel"
               name="phone"
-              required="required"
+              required="true"
+              sx={{
+                "& .MuiInputLabel-root": { color: "green" },
+                borderBottom: "2px solid white",
+                borderRadius: 1,
+              }}
               InputLabelProps={{
-                style: { color: "black", fontWeight: "bold " },
+                style: { color: "white", fontWeight: "bold " },
               }}
               inputProps={{
                 style: {
                   fontFamily: "nunito",
-                  color: "black",
+                  color: "white",
                   fontWeight: "500",
                 },
               }}
@@ -92,19 +107,24 @@ export const FormSubmit = () => {
               className="input"
               min={1}
               max={20}
-              variant="outlined"
+              variant="standard"
               label="Vehicle"
               placeholder="Vehicle - Make, Model, Year"
               type="text"
               name="vehicle"
               required="required"
+              sx={{
+                "& .MuiInputLabel-root": { color: "green" },
+                borderBottom: "2px solid white",
+                borderRadius: 1,
+              }}
               InputLabelProps={{
-                style: { color: "black", fontWeight: "bold " },
+                style: { color: "white", fontWeight: "bold " },
               }}
               inputProps={{
                 style: {
                   fontFamily: "nunito",
-                  color: "black",
+                  color: "white",
                   fontWeight: "500",
                 },
               }}
@@ -113,19 +133,24 @@ export const FormSubmit = () => {
               className="input"
               min={1}
               max={20}
-              variant="outlined"
+              variant="standard"
               label="From"
               placeholder="City"
               type="text"
               name="fromCity"
               required="required"
+              sx={{
+                "& .MuiInputLabel-root": { color: "green" },
+                borderBottom: "2px solid white",
+                borderRadius: 1,
+              }}
               InputLabelProps={{
-                style: { color: "black", fontWeight: "bold " },
+                style: { color: "white", fontWeight: "bold " },
               }}
               inputProps={{
                 style: {
                   fontFamily: "nunito",
-                  color: "black",
+                  color: "white",
                   fontWeight: "500",
                 },
               }}
@@ -134,19 +159,24 @@ export const FormSubmit = () => {
               className="input"
               min={1}
               max={20}
-              variant="outlined"
+              variant="standard"
               label="To"
               placeholder="City"
               type="text"
               name="toCity"
               required="required"
+              sx={{
+                "& .MuiInputLabel-root": { color: "green" },
+                borderBottom: "2px solid white",
+                borderRadius: 1,
+              }}
               InputLabelProps={{
-                style: { color: "black", fontWeight: "bold " },
+                style: { color: "white", fontWeight: "bold " },
               }}
               inputProps={{
                 style: {
                   fontFamily: "nunito",
-                  color: "black",
+                  color: "white",
                   fontWeight: "500",
                 },
               }}
@@ -155,25 +185,35 @@ export const FormSubmit = () => {
               className="input"
               min={1}
               max={20}
-              variant="outlined"
+              variant="standard"
               label="Running or Non-Running"
               placeholder="Status"
               type="text"
               name="status"
               required="required"
+              sx={{
+                "& .MuiInputLabel-root": { color: "green" },
+                borderBottom: "2px solid white",
+                borderRadius: 1,
+              }}
               InputLabelProps={{
-                style: { color: "black", fontWeight: "bold " },
+                style: { color: "white", fontWeight: "bold " },
               }}
               inputProps={{
                 style: {
                   fontFamily: "nunito",
-                  color: "black",
+                  color: "white",
                   fontWeight: "500",
                 },
               }}
             />
-            <Button className="button" size="large" type="submit">
-              Submit Resevation
+            <Button
+              className="button"
+              variant="contained"
+              size="large"
+              type="submit"
+            >
+              Submit Quote
             </Button>
           </form>
         </div>
