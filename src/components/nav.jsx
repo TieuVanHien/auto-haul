@@ -8,7 +8,7 @@ export const Nav = () => {
   const [open, setOpen] = useState(false);
   const [close, setClose] = useState(false);
   return (
-    <section className="nav">
+    <div className="nav">
       <div className="nav-container">
         <div className="logo">
           <img src={Logo} alt="logo" />
@@ -109,6 +109,6 @@ export const Nav = () => {
           </Button>
         </div>
       </div>
-    </section>
+    </div>
   );
 };
