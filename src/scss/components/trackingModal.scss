@@ -1,0 +1,37 @@
+@use "../typography" as *;
+
+.css-rs7sgu {
+  padding: 1em;
+  border-radius: 0.5em;
+}
+.css-8ndowl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.css-79ws1d-MuiModal-root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .trackingModal {
+    h2 {
+      color: $black;
+      font-weight: bold;
+    }
+    display: flex;
+    height: 65%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .trackingForm {
+      .input {
+        margin-bottom: 1em;
+      }
+      .message {
+        padding: 1em;
+      }
+    }
+  }
+}
