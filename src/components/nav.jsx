@@ -60,6 +60,7 @@ export const Nav = () => {
             About
           </Link>
           <Link
+            href="#service"
             className="link"
             to="service"
             spy={true}
