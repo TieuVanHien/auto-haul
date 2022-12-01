@@ -28,7 +28,7 @@ export const Nav = () => {
             }
           }}
         />
-        <div className="links">
+        <div className={`links ${open ? "" : "closed"}`}>
           <Link
             href="#home"
             className="link"
@@ -37,10 +37,10 @@ export const Nav = () => {
             smooth={true}
             offset={0}
             duration={300}
-            // onClick={() => {
-            //   setClose(false);
-            //   setOpen(false);
-            // }}
+            onClick={() => {
+              setClose(false);
+              setOpen(false);
+            }}
           >
             Home
           </Link>
@@ -52,25 +52,24 @@ export const Nav = () => {
             smooth={true}
             offset={0}
             duration={300}
-            // onClick={() => {
-            //   setClose(false);
-            //   setOpen(false);
-            // }}
+            onClick={() => {
+              setClose(false);
+              setOpen(false);
+            }}
           >
             About
           </Link>
           <Link
-            href="#service"
             className="link"
             to="service"
             spy={true}
             smooth={true}
             offset={0}
             duration={300}
-            // onClick={() => {
-            //   setClose(false);
-            //   setOpen(false);
-            // }}
+            onClick={() => {
+              setClose(false);
+              setOpen(false);
+            }}
           >
             Service
           </Link>
@@ -82,31 +81,31 @@ export const Nav = () => {
             smooth={true}
             offset={0}
             duration={300}
-            // onClick={() => {
-            //   setClose(false);
-            //   setOpen(false);
-            // }}
+            onClick={() => {
+              setClose(false);
+              setOpen(false);
+            }}
           >
             Tracking
           </Link>
-        </div>
-        <div className="contact-btn">
-          <Button className="button" variant="contained">
-            <Link
-              href="#Contact"
-              to="contact"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={300}
-              // onClick={() => {
-              //   setClose(false);
-              //   setOpen(false);
-              // }}
-            >
-              Contact
-            </Link>
-          </Button>
+          <div className="contact-btn">
+            <Button className="button" variant="contained">
+              <Link
+                href="#Contact"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={300}
+                onClick={() => {
+                  setClose(false);
+                  setOpen(false);
+                }}
+              >
+                Contact
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </div>

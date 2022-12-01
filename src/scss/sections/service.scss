@@ -1,7 +1,13 @@
 @use "../typography" as *;
+@use "../mixin" as *;
 
 .service {
   .container {
+    h4 {
+      text-decoration: 2px underline $secondary;
+      text-underline-offset: 0.5em;
+      width: 70%;
+    }
     background-color: $black;
     width: 100%;
     display: flex;
@@ -35,6 +41,7 @@
           display: flex;
           justify-content: space-around;
           align-items: center;
+
           img {
             width: 40%;
             height: 80%;
@@ -59,6 +66,50 @@
           align-items: center;
           .details {
             width: 55%;
+            margin-left: 2em;
+          }
+        }
+      }
+    }
+    @include respond-to("tablet") {
+      height: auto;
+      h4 {
+        margin-top: 0.5em;
+        width: 90%;
+      }
+      .heading {
+        text-align: center;
+        img {
+          width: 90%;
+        }
+      }
+      .service-board {
+        .top {
+          flex-direction: column;
+          margin-top: 1em;
+          .board {
+            width: 100%;
+            img {
+              width: 70%;
+              margin: 0;
+            }
+            .details {
+              width: 70%;
+            }
+          }
+        }
+        .bottom {
+          flex-direction: column;
+          margin-top: 1em;
+          .board {
+            width: 100%;
+            img {
+              width: 70%;
+              margin: 0;
+            }
+            .details {
+              width: 70%;
+            }
           }
         }
       }

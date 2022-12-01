@@ -1,4 +1,4 @@
-@use "./../typography" as *;
+@use "./../typography/breakpoint.scss" as *;
 
 @mixin respond-to($key) {
   $size: map-get($breakpoints, $key);

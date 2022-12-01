@@ -1,16 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import Line from "../images/heading-service.svg";
 import bubble from "../images/bubbleBackground.svg";
 import service1 from "../images/service-1.svg";
 import service2 from "../images/service-2.svg";
 import service3 from "../images/service-3.svg";
-import { Button } from "@mui/material";
 
 export const Service = () => {
-  const [open, setOpen] = useState(false);
-  const handleClose = () => setOpen(false);
   return (
-    <sections className="service">
+    <sections className="service" id="service">
       <div className="container">
         <img className="bubble" src={bubble} alt="bubble background" />
         <div className="heading">
