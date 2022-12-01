@@ -34,6 +34,7 @@ export const Footer = () => {
               <div className="email">
                 <EmailIcon className="icon" />
                 <Link
+                  href="#"
                   className="email-link"
                   onClick={() =>
                     (window.location = "mailto:autohauler88@gmail.com")
